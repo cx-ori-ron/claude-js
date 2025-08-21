@@ -96,9 +96,11 @@ app.get("/api/get_id", (req, res) => {
 
 app.get("/api/ping", (req, res) => {
   const input = req.query.input || "127.0.0.1";
-  runCommand(input, (output) => {
+  // /* runCommand(input, (output) => {
     res.send(`<pre>${output}</pre>`);
   });
+*/
+  return "";
 });
 
 
